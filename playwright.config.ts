@@ -1,15 +1,17 @@
-import type { PlaywrightTestConfig } from '@playwright/test';
-
-const config: PlaywrightTestConfig = {
-  testMatch: ["tests/login.page.ts"],
-  timeout: 5000,
-  reporter: "html",
+import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
+const config:PlaywrightTestConfig = {
+  testMatch:["tests/test.ts"],
   use: {
-    headless: false,
-    screenshot: "only-on-failure",
-    video: "off"
+    headless:false,
+    screenshot:"only-on-failure",
+    //baseURL:'https://letcode.in/signin',
+    ignoreHTTPSErrors:true
   },
-  globalSetup: "src/utils/globalSetup.ts"
+  reporter: [["dot"],["json",{
+    outputFile:"jsonReports/jsonReport.json"
+  }],["html",{
+    open:"never"
+  }]]
 };
 
 export default config;

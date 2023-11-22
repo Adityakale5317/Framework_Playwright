@@ -1,0 +1,116 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Minfy.DESKTOP-KB2S39B\\OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED\\Desktop\\Framework_Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/Minfy.DESKTOP-KB2S39B/OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED/Desktop/Framework_Playwright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Minfy.DESKTOP-KB2S39B/OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED/Desktop/Framework_Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Minfy.DESKTOP-KB2S39B/OneDrive - MINFY TECHNOLOGIES PRIVATE LIMITED/Desktop/Framework_Playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.40.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\test.ts",
+      "file": "tests/test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 2521,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "https://letcode.in/signin\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-11-22T13:13:50.521Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "834c525f489365c69e4e-8a8c31771a5026a2fd48",
+          "file": "tests/test.ts",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-11-22T13:13:50.062Z",
+    "duration": 4037.0610000000006,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
